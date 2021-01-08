@@ -24,6 +24,7 @@ const routes = [
 ];
 
 const router = createRouter({
+  base: "/personal-website/",
   history: createWebHistory(),
   routes,
   // set scroll when navigating
