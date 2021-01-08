@@ -1,4 +1,4 @@
-import { createWebHistory, createRouter } from "vue-router";
+import { createWebHistory, createRouter} from "vue-router";
 import Home from "@/views/Home.vue";
 import About from "@/views/About.vue";
 import Landing from "@/views/Landing.vue";
@@ -24,7 +24,6 @@ const routes = [
 ];
 
 const router = createRouter({
-  base: "/personal-website/",
   history: createWebHistory(),
   routes,
   // set scroll when navigating
