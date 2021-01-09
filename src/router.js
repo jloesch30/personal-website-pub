@@ -5,7 +5,7 @@ import Landing from "@/views/Landing.vue";
 import TheFooter from "@/components/TheFooter.vue";
 import TheLandingNav from "@/components/TheLandingNav.vue";
 
-const baseUrl = '/personal-project';
+const baseUrl = '/personal-website';
 
 const routes = [
   {
