@@ -5,20 +5,22 @@ import Landing from "@/views/Landing.vue";
 import TheFooter from "@/components/TheFooter.vue";
 import TheLandingNav from "@/components/TheLandingNav.vue";
 
+const baseUrl = '/personal-project';
+
 const routes = [
   {
-    path: "/",
-    name: "Landing",
+    path: baseUrl + '/',
+    name: 'Landing',
     components: {default: Landing, nav: TheLandingNav}
   },
   {
-    path: "/home",
-    name: "Home",
+    path: baseUrl + '/home',
+    name: 'Home',
     components: {default: Home, footer: TheFooter}
   },
   {
-    path: "/about",
-    name: "About",
+    path: baseUrl + '/about',
+    name: 'About',
     components: {default: About, footer: TheFooter}
   },
 ];
