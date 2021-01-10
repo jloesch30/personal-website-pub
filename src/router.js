@@ -9,6 +9,16 @@ const baseUrl = '/personal-website';
 
 const routes = [
   {
+    path: baseUrl + '/resume',
+    name: 'Resume',
+    components: {default: About, footer: TheFooter}
+  },
+  {
+    path: baseUrl + '/projects',
+    name: 'Projects',
+    components: {default: About, footer: TheFooter}
+  },
+  {
     path: baseUrl + '/',
     name: 'Landing',
     components: {default: Landing, nav: TheLandingNav}
