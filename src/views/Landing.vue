@@ -14,7 +14,7 @@
           />
         </div>
         <div class="col s6 offset-s7 center-align" id="welcome-text">
-          <h5>welcome!</h5>
+          <h5>Welcome!</h5>
           <p>
             Please feel free to look around and explore my various intrests and
             projects.
