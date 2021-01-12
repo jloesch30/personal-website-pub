@@ -1,3 +1,7 @@
+/*
+ * gh-pages automation script using execa
+ */
+
 const execa = require("execa");
   const fs = require("fs");
 
