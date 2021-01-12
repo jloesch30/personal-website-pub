@@ -1,23 +1,15 @@
 import { createWebHistory, createRouter} from "vue-router";
 import Home from "@/views/Home.vue";
 import About from "@/views/About.vue";
+import Academics from "@/views/Academics.vue";
 import Landing from "@/views/Landing.vue";
+import Misc from "@/views/Misc.vue";
 import TheFooter from "@/components/TheFooter.vue";
 import TheLandingNav from "@/components/TheLandingNav.vue";
 
 const baseUrl = '/personal-website';
 
 const routes = [
-  {
-    path: baseUrl + '/resume',
-    name: 'Resume',
-    components: {default: About, footer: TheFooter}
-  },
-  {
-    path: baseUrl + '/projects',
-    name: 'Projects',
-    components: {default: About, footer: TheFooter}
-  },
   {
     path: baseUrl + '/',
     name: 'Landing',
@@ -29,10 +21,20 @@ const routes = [
     components: {default: Home, footer: TheFooter}
   },
   {
+    path: baseUrl + '/academics',
+    name: 'Academics',
+    components: {default: Academics, footer: TheFooter}
+  },
+  {
+    path: baseUrl + '/misc',
+    name: 'Academics',
+    components: {default: Misc, footer: TheFooter}
+  },
+  {
     path: baseUrl + '/about',
     name: 'About',
     components: {default: About, footer: TheFooter}
-  },
+  }
 ];
 
 const router = createRouter({
