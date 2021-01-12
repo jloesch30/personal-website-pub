@@ -1,8 +1,5 @@
 <template>
   <body>
-    <div class="nav-items">
-      <the-landing-nav></the-landing-nav>
-    </div>
     <div class="container">
       <div class="row">
         <div class="personal-image col s6 offset-s7 center-align">
@@ -24,24 +21,19 @@
     </div>
 
     <div class="down-indication"></div>
-    <div class="col s12" id="bottom-footer">
-      <the-landing-footer></the-landing-footer>
-    </div>
   </body>
 </template>
 
 <script>
-import TheLandingNav from "@/components/TheLandingNav.vue";
-import TheLandingFooter from "@/components/TheLandingFooter.vue";
 
 export default {
   components: {
-    TheLandingNav,
-    TheLandingFooter,
   },
   data() {
     return {};
   },
+  beforeRouteEnter() {
+  }
 };
 </script>
 

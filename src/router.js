@@ -5,7 +5,6 @@ import Academics from "@/views/Academics.vue";
 import Landing from "@/views/Landing.vue";
 import Misc from "@/views/Misc.vue";
 import TheFooter from "@/components/TheFooter.vue";
-import TheLandingNav from "@/components/TheLandingNav.vue";
 
 const baseUrl = '/personal-website';
 
@@ -13,7 +12,7 @@ const routes = [
   {
     path: baseUrl + '/',
     name: 'Landing',
-    components: {default: Landing, nav: TheLandingNav}
+    components: {default: Landing, footer: TheFooter}
   },
   {
     path: baseUrl + '/home',
@@ -27,7 +26,7 @@ const routes = [
   },
   {
     path: baseUrl + '/misc',
-    name: 'Academics',
+    name: 'Miscellaneous',
     components: {default: Misc, footer: TheFooter}
   },
   {
