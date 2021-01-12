@@ -4,6 +4,7 @@ import About from "@/views/About.vue";
 import Academics from "@/views/Academics.vue";
 import Landing from "@/views/Landing.vue";
 import Misc from "@/views/Misc.vue";
+import Contact from "@/views/Contact.vue";
 
 
 const baseUrl = '/personal-website';
@@ -23,6 +24,11 @@ const routes = [
     path: baseUrl + '/academics',
     name: 'Academics',
     component: Academics  
+  },
+  {
+    path: baseUrl + '/contact',
+    name: 'Contact',
+    component: Contact
   },
   {
     path: baseUrl + '/misc',

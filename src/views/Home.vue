@@ -4,40 +4,25 @@
       <the-nav></the-nav>
     </div>
     <div class="row">
-      <div class="col s12 m9 l10">
-        <div id="introduction" class="section scrollspy">
-          <p>Content</p>
-        </div>
-
-        <div id="structure" class="section scrollspy">
-          <p>Content</p>
-        </div>
-
-        <div id="initialization" class="section scrollspy">
-          <p>Content</p>
+      <div>
+        <div class="card-panel teal col s12 offset-l7">
+          <span class="white-text"
+            >I am a very simple card. I am good at containing small bits of
+            information. I am convenient because I require little markup to use
+            effectively. I am similar to what is called a panel in other
+            frameworks.
+          </span>
         </div>
       </div>
-      <div class="col hide-on-small-only m3 l2">
-        <ul class="section table-of-contents">
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#structure">Structure</a></li>
-          <li><a href="#initialization">Intialization</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="bottom-footer">
-      <the-footer></the-footer>
     </div>
   </body>
 </template>
 
 <script>
-import TheFooter from "@/components/TheFooter.vue";
 import TheNav from "@/components/TheNav.vue";
 import M from "materialize-css";
 export default {
   components: {
-    TheFooter,
     TheNav,
   },
   mounted() {

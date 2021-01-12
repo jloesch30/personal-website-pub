@@ -1,26 +1,28 @@
 <template>
   <div class="navbar-fixed">
-    <nav>
+    <nav id="navbar">
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
+        <router-link :to="landing" class="brand-logo">Logo</router-link>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"
           ><i class="material-icons">menu</i></a
         >
         <ul class="right hide-on-med-and-down">
-          <li><a href="sass.html">Home</a></li>
-          <li><a href="badges.html">About</a></li>
-          <li><a href="collapsible.html">Projects</a></li>
-          <li><a href="mobile.html">Miscellaneous</a></li>
+          <li><router-link :to="home" class="li-elem">Home</router-link></li>
+          <li><router-link :to="about" class="li-elem">About</router-link></li>
+          <li><router-link :to="academics" class="li-elem">Academics</router-link></li>
+          <li><router-link :to="misc" class="li-elem">Miscellaneous</router-link></li>
+          <li><router-link :to="contact" class="li-elem"><i class="material-icons">message</i></router-link></li>
         </ul>
       </div>
     </nav>
   </div>
 
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Home</a></li>
-    <li><a href="badges.html">About</a></li>
-    <li><a href="collapsible.html">Projects</a></li>
-    <li><a href="mobile.html">Miscellaneous</a></li>
+    <li><router-link :to="home">Home</router-link></li>
+    <li><router-link :to="about">About</router-link></li>
+    <li><router-link :to="academics">Academics</router-link></li>
+    <li><router-link :to="misc">Miscellaneous</router-link></li>
+    <li><router-link :to="contact">Contact</router-link></li>
   </ul>
 </template>
 
@@ -28,7 +30,14 @@
 import M from "materialize-css";
 export default {
   data() {
-    return {};
+    return {
+      landing: {name: "Landing"},
+      home: {name: "Home"},
+      about: {name: "About"},
+      academics: {name: "Academics"},
+      misc: {name: "Miscellaneous"},
+      contact: {name: "Contact"}
+    };
   },
   mounted() {
     M.AutoInit();
@@ -37,8 +46,14 @@ export default {
 </script>
 
 <style scoped>
-.navbar {
-  background-color: rgba(232, 234, 242, 0.8);
+a, u {
+  text-decoration: none;
+}
+.li-elem {
+  color: black;
+}
+#navbar {
+  background-color: rgba(204, 207, 215, 0.8);
 }
 #pic-me {
   color: black;
