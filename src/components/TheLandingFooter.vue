@@ -10,10 +10,10 @@
             <router-link :to="about" class="hvr-float-shadow" id="click-link">About</router-link>
           </h6>
           <h6 class="white-text col s3 center-align">
-            <router-link :to="projects" class="hvr-float-shadow" id="click-link">Projects</router-link>
+            <router-link :to="academics" class="hvr-float-shadow" id="click-link">Projects</router-link>
           </h6>
           <h6 class="white-text col s3 center-align">
-            <router-link :to="resume" class="hvr-float-shadow" id="click-link">Resume</router-link>
+            <router-link :to="miscellaneous" class="hvr-float-shadow" id="click-link">Miscellaneous</router-link>
           </h6>
         </div>
       </div>
@@ -33,8 +33,8 @@ export default {
     return {
       about: {name: 'About'},
       home: {name: 'Home'},
-      projects: {name: 'Projects'},
-      resume: {name: 'Resume'}
+      academics: {name: 'Academics'},
+      miscellaneous: {name: 'Miscellaneous'}
     };
   }
 };
