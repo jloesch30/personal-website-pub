@@ -21,18 +21,21 @@
     </div>
 
     <div class="down-indication"></div>
+    <div class="bottom-footer">
+      <the-footer></the-footer>
+    </div>
   </body>
 </template>
 
 <script>
+import TheFooter from '../components/TheFooter.vue';
 
 export default {
   components: {
+    TheFooter
   },
   data() {
     return {};
-  },
-  beforeRouteEnter() {
   }
 };
 </script>
@@ -51,7 +54,7 @@ body {
   align-self: center;
 }
 
-#bottom-footer {
+.bottom-footer {
   position: absolute;
   left: 0;
   bottom: 0;

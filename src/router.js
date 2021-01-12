@@ -4,7 +4,7 @@ import About from "@/views/About.vue";
 import Academics from "@/views/Academics.vue";
 import Landing from "@/views/Landing.vue";
 import Misc from "@/views/Misc.vue";
-import TheFooter from "@/components/TheFooter.vue";
+
 
 const baseUrl = '/personal-website';
 
@@ -12,27 +12,27 @@ const routes = [
   {
     path: baseUrl + '/',
     name: 'Landing',
-    components: {default: Landing, footer: TheFooter}
+    component: Landing
   },
   {
     path: baseUrl + '/home',
     name: 'Home',
-    components: {default: Home, footer: TheFooter}
+    component: Home
   },
   {
     path: baseUrl + '/academics',
     name: 'Academics',
-    components: {default: Academics, footer: TheFooter}
+    component: Academics  
   },
   {
     path: baseUrl + '/misc',
     name: 'Miscellaneous',
-    components: {default: Misc, footer: TheFooter}
+    component: Misc
   },
   {
     path: baseUrl + '/about',
     name: 'About',
-    components: {default: About, footer: TheFooter}
+    component: About
   }
 ];
 

@@ -1,6 +1,6 @@
 <template>
   <router-view name="default"></router-view>
-  <router-view name="footer"></router-view>
+  <!-- <router-view name="footer"></router-view> -->
 </template>
 
 <script>
@@ -9,7 +9,6 @@ export default {
   name: "App",
   components: {},
   mounted() {
-    console.log('Mounting the App');
     M.AutoInit();
   }
 };
