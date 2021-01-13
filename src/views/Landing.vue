@@ -4,7 +4,7 @@
       <div class="row">
         <div class="personal-image col s6 offset-s7 center-align">
           <img
-            class="z-depth-3"
+            class="z-depth-3 responsive-img"
             id="my-image"
             src="../assets/imgs/head.png"
             alt="placeholder"
