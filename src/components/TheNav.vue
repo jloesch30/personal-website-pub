@@ -2,7 +2,7 @@
   <div class="navbar-fixed">
     <nav id="navbar">
       <div class="nav-wrapper">
-        <router-link :to="landing" class="brand-logo">Logo</router-link>
+        <router-link :to="landing" class="brand-logo"><img class="responsive-img resize circle z-depth-1" src="../assets/imgs/meSmall.jpeg"></router-link>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"
           ><i class="material-icons">menu</i></a
         >
@@ -49,11 +49,18 @@ export default {
 a, u {
   text-decoration: none;
 }
+img {
+  margin: 10px;
+}
+img.resize {
+  width: 50px;
+  height: auto;
+}
 .li-elem {
   color: black;
 }
 #navbar {
-  background-color: rgba(204, 207, 215, 0.8);
+  background-color: rgba(184, 184, 184, 100);
 }
 #pic-me {
   color: black;

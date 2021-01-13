@@ -3,18 +3,29 @@
     <div>
       <the-nav></the-nav>
     </div>
-    <div class="row">
-      <div>
-        <div class="card-panel teal col s12 offset-l7">
-          <span class="white-text"
-            >I am a very simple card. I am good at containing small bits of
-            information. I am convenient because I require little markup to use
-            effectively. I am similar to what is called a panel in other
-            frameworks.
-          </span>
+    <main>
+      <div class="divider"></div>
+      <div class="section">
+        <div class="row">
+          <div class="col s6">
+            <img
+              class="responsive-img"
+              src="../assets/svg/vuejs.svg"
+              alt="vue"
+            />
+          </div>
+          <div class="col s6 sec-1">
+            <h4>Intro</h4>
+            <p >
+              Hello and welcome to my personal website. I hope you find the
+              material found of this page informative and usful to learn more
+              about me.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="divider"></div>
+    </main>
   </body>
 </template>
 
@@ -32,12 +43,12 @@ export default {
 </script>
 
 <style scoped>
-.bottom-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 0px;
-  width: 100%;
+img {
+  display: block;
+  height: auto;
+  margin: 5rem;
+  margin-left: 150px;
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
 }
 </style>
 
