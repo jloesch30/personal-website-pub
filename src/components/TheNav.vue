@@ -53,8 +53,10 @@ img {
   margin: 10px;
 }
 img.resize {
+  margin-top: 3px;
   width: 50px;
   height: auto;
+  object-fit: contain;
 }
 .li-elem {
   color: black;

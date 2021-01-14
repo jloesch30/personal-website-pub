@@ -6,17 +6,17 @@
     <footer id="footer" class="page-footer blue-grey lighten-3">
       <div class="container">
         <div class="row">
-          <h6 class="col s3 center-align">
+          <h6 class="col s3 center">
             <router-link :to="home" class="hvr-float-shadow" id="click-link"
               >Home</router-link
             >
           </h6>
-          <h6 class="col s3 center-align">
+          <h6 class="col s3 center">
             <router-link :to="about" class="hvr-float-shadow" id="click-link"
               >About</router-link
             >
           </h6>
-          <h6 class="col s3 center-align">
+          <h6 class="col s3 center">
             <router-link
               :to="academics"
               class="hvr-float-shadow"
@@ -24,12 +24,12 @@
               >Projects</router-link
             >
           </h6>
-          <h6 class="col s3 center-align">
+          <h6 class="col s3 center">
             <router-link
               :to="miscellaneous"
               class="hvr-float-shadow"
               id="click-link"
-              >Miscellaneous</router-link
+              >Misc</router-link
             >
           </h6>
         </div>
