@@ -1,53 +1,49 @@
 <template>
-  <body>
-    <div>
-      <the-nav></the-nav>
+  <div>
+    <the-nav></the-nav>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="../assets/imgs/friends.jpg" />
     </div>
-    <main>
-      <div class="section">
-        <div class="row container">
-          <div class="col s12 l4 m6">
-            <img
-              id="vue-img"
-              class="responsive-img"
-              src="../assets/svg/vuejs.svg"
-              alt="vue"
-            />
-          </div>
-          <div class="col s12 l8 m6">
-            <h4 class="header">Intro</h4>
-            <p>
-              Hello and welcome to my personal website. I hope you find the
-              material found of this page informative and usful to learn more
-              about me. To begin, I wanted to speak on the website and the
-              methods used to build this portfolio
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="section">
-        <div class="row container">
-          <div class="col s12 l8 m6">
-            <h4 class="header">Intro</h4>
-            <p>
-              Hello and welcome to my personal website. I hope you find the
-              material found of this page informative and usful to learn more
-              about me. To begin, I wanted to speak on the website and the
-              methods used to build this portfolio
-            </p>
-          </div>
-          <div class="col s12 l4 m6">
-            <img
-              id="vue-img"
-              class="responsive-img"
-              src="../assets/svg/vuejs.svg"
-              alt="vue"
-            />
-          </div>
-        </div>
-      </div>
-    </main>
-  </body>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header">Parallax</h2>
+      <p class="grey-text text-darken-3 lighten-3">
+        Parallax is an effect where the background content or image in this
+        case, is moved at a different speed than the foreground content while
+        scrolling.Parallax is an effect where the background content or image in
+        this case, is moved at a different speed than the foreground content
+        while scrolling.Parallax is an effect where the background content or
+        image in this case, is moved at a different speed than the foreground
+        content while scrolling.Parallax is an effect where the background
+        content or image in this case, is moved at a different speed than the
+        foreground content while scrolling.
+      </p>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="../assets/imgs/camera.jpg" />
+    </div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header">Parallax</h2>
+      <p class="grey-text text-darken-3 lighten-3">
+        Parallax is an effect where the background content or image in this
+        case, is moved at a different speed than the foreground content while
+        scrolling.Parallax is an effect where the background content or image in
+        this case, is moved at a different speed than the foreground content
+        while scrolling.Parallax is an effect where the background content or
+        image in this case, is moved at a different speed than the foreground
+        content while scrolling.Parallax is an effect where the background
+        content or image in this case, is moved at a different speed than the
+        foreground content while scrolling.
+      </p>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -64,12 +60,4 @@ export default {
 </script>
 
 <style scoped>
-img {
-  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
-  margin-top: 3rem;
-}
-h4.header {
-  font-weight: bold;
-}
 </style>
-
