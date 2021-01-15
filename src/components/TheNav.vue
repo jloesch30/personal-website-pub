@@ -59,10 +59,10 @@ img.resize {
   object-fit: contain;
 }
 .li-elem {
-  color: black;
+  color: white;
 }
 #navbar {
-  background-color: rgba(184, 184, 184, 100);
+  background-color: rgb(61, 138, 186);
 }
 #pic-me {
   color: black;

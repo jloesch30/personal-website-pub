@@ -3,7 +3,7 @@
 
 <template>
   <div>
-    <footer id="footer" class="page-footer blue-grey lighten-3">
+    <footer id="footer" class="page-footer">
       <div class="container">
         <div class="row">
           <h6 class="col s3 center">
@@ -117,11 +117,11 @@ export default {
 <style scoped>
 #click-link {
   cursor: pointer;
-  color: rgba(34, 40, 39, 0.783);
+  color: white;
+  text-decoration: none;
 }
-
 #footer {
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgb(61, 138, 186);
 }
 .icon {
   margin: 8px;

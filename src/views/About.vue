@@ -2,64 +2,59 @@
   <div>
     <the-nav></the-nav>
   </div>
-  <div class="parallax bg-image-1"></div>
-  <div class="container">
+  <section class="container">
+    <div class="seperator"></div>
+    <div class="row">
+      <h4 class="header">About Josh</h4>
+    </div>
+  </section>
+  <section class="container">
+    <div>
+      <h5 class="under-header">Quote or saying here</h5>
+    </div>
     <div class="content">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
-        laborum amet minima eos accusamus quos. Doloribus ratione incidunt
-        exercitationem necessitatibus atque, dignissimos voluptatum sunt, unde
-        dicta enim a impedit soluta.
+      <p id="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim esse
+        impedit aliquid omnis quidem quod, maiores dolor modi ex eius, harum
+        architecto laboriosam distinctio doloremque necessitatibus itaque?
+        Quisquam, ea magnam?
       </p>
     </div>
-  </div>
-
-  <div class="parallax bg-image-2"></div>
-  <div class="container">
-    <div class="content">
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat quam
-        dolor minima vitae libero veniam laboriosam ducimus corrupti molestiae
-        praesentium? Facilis aut eaque quia. Ad sunt harum incidunt modi! Sint!
-      </p>
-    </div>
-  </div>
-
-  <div>
-    <the-contact></the-contact>
-  </div>
+  </section>
 </template>
 
 <script>
-import TheContact from "../components/TheContact.vue";
+import M from "materialize-css";
 import TheNav from "@/components/TheNav.vue";
 export default {
   data() {
     return {};
   },
-  computed: {},
   components: {
-    TheContact,
     TheNav,
+  },
+  mounted() {
+    M.AutoInit();
   },
 };
 </script>
 
 <style scoped>
-.parallax {
-  /* Set a specific height */
-  height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.seperator {
+  margin: 4rem;
 }
-.bg-image-1 {
-  background-image: url("../assets/imgs/camera.jpg");
+.header {
+  font-weight: bold;
+  font-family: "Merriweather", serif;
 }
-.bg-image-2 {
-  background-image: url("../assets/imgs/friends.jpg");
+.table-of-contents {
+  position: fixed;
+}
+.under-header {
+  color: rgb(61, 138, 186);
+}
+#paragraph {
+  font-size: 16px;
+  font-family: 'Montserrat', serif;
 }
 </style>
