@@ -23,27 +23,9 @@
   </section>
   <section>
     <div class="seperator"></div>
-    <div class="row">
-      <div class="col l3">
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="../assets/imgs/milk-1.jpg" />
-          </div>
-        </div>
-      </div>
-      <div class="col l3">
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="../assets/imgs/friends-1.jpg" />
-          </div>
-        </div>
-      </div>
-      <div class="col l3">
-        <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="../assets/imgs/friends-1.jpg" />
-          </div>
-        </div>
+    <div class="row container">
+      <div class="col l12 center">
+        <img src="../assets/imgs/mccombs.png" alt="ut-austin">
       </div>
     </div>
   </section>
@@ -66,6 +48,10 @@ export default {
 </script>
 
 <style scoped>
+img {
+  width: 70%;
+  height: auto;
+}
 .seperator {
   margin: 4rem;
 }
