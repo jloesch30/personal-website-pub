@@ -1,6 +1,3 @@
-
-
-
 <template>
   <div>
     <footer id="footer" class="page-footer">

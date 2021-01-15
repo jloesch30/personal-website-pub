@@ -21,6 +21,32 @@
       </p>
     </div>
   </section>
+  <section>
+    <div class="seperator"></div>
+    <div class="row">
+      <div class="col l3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="../assets/imgs/milk-1.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="col l3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="../assets/imgs/friends-1.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="col l3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="../assets/imgs/friends-1.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -55,6 +81,6 @@ export default {
 }
 #paragraph {
   font-size: 16px;
-  font-family: 'Montserrat', serif;
+  font-family: "Montserrat", serif;
 }
 </style>
