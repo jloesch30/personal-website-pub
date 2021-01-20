@@ -44,35 +44,45 @@
     </div>
   </section>
   <section>
-    <div class="seperator"></div>
-    <the-image-row
-    :images="images"/>
+    <the-slide-show
+    :i1="image1"
+    :i2="image2"
+    :i3="image3">
+    </the-slide-show>
   </section>
 </template>
 <script>
 import M from "materialize-css";
 import TheNav from "@/components/TheNav.vue";
-import TheImageRow from "@/components/TheImageRow.vue";
+import TheSlideShow from "@/components/TheSlideShow.vue";
 export default {
   data() {
-    return {};
+    return {
+      image1: {
+        id: 0,
+        url: 'lake.jpg',
+        show: true
+      },
+      image2: {
+        id: 1,
+        url: 'milk.jpg',
+        show: false
+      },
+      image3: {
+        id: 2,
+        url: 'vue.png',
+        show: false
+      }
+    };
   },
   components: {
     TheNav,
-    TheImageRow
+    TheSlideShow
   },
   mounted() {
     M.AutoInit();
   },
   computed: {
-    images() {
-      return {
-        i1: "friends.jpg",
-        i2: "milk.jpg",
-        i3: "lake-1.jpg",
-        i4: "milk-1.jpg"
-      };
-    }
   }
 };
 </script>
