@@ -43,12 +43,18 @@
       </div>
     </div>
   </section>
-  <section>
-    <the-slide-show
-    :i1="image1"
-    :i2="image2"
-    :i3="image3">
-    </the-slide-show>
+  <section class="slide-show">
+    <the-slide-show :i1="image1" :i2="image2" :i3="image3"> </the-slide-show>
+  </section>
+  <section class="container">
+    <div class="content">
+      <p id="paragraph">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+        quidem, doloremque labore omnis porro, minus corrupti dignissimos
+        quaerat, error iure qui vitae. Nisi incidunt ducimus similique vitae
+        voluptates maxime provident!
+      </p>
+    </div>
   </section>
 </template>
 <script>
@@ -60,30 +66,29 @@ export default {
     return {
       image1: {
         id: 0,
-        url: 'lake.jpg',
-        show: true
+        url: "lake.jpg",
+        show: true,
       },
       image2: {
         id: 1,
-        url: 'milk.jpg',
-        show: false
+        url: "milk.jpg",
+        show: false,
       },
       image3: {
         id: 2,
-        url: 'vue.png',
-        show: false
-      }
+        url: "vue.png",
+        show: false,
+      },
     };
   },
   components: {
     TheNav,
-    TheSlideShow
+    TheSlideShow,
   },
   mounted() {
     M.AutoInit();
   },
-  computed: {
-  }
+  computed: {},
 };
 </script>
 
@@ -91,6 +96,10 @@ export default {
 img {
   width: 80%;
   height: auto;
+}
+.slide-show {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .carousel-item {
   height: 32rem;

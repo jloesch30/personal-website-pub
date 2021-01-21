@@ -15,7 +15,7 @@
           </h6>
           <h6 class="col s3 center">
             <router-link
-              :to="academics"
+              :to="projects"
               class="hvr-float-shadow"
               id="click-link"
               >Projects</router-link
@@ -84,7 +84,7 @@ export default {
     return {
       about: { name: "About" },
       home: { name: "Home" },
-      academics: { name: "Academics" },
+      projects: { name: "Projects" },
       miscellaneous: { name: "Miscellaneous" },
       git: 'https://github.com/jloesch30',
       insta: 'https://www.instagram.com/joshualoesch/',

@@ -9,7 +9,7 @@
         <ul class="right hide-on-med-and-down">
           <li><router-link :to="home" class="li-elem">Home</router-link></li>
           <li><router-link :to="about" class="li-elem">About</router-link></li>
-          <li><router-link :to="academics" class="li-elem">Academics</router-link></li>
+          <li><router-link :to="projects" class="li-elem">Projects</router-link></li>
           <li><router-link :to="misc" class="li-elem">Miscellaneous</router-link></li>
           <li><router-link :to="contact" class="li-elem"><i class="material-icons">message</i></router-link></li>
         </ul>
@@ -20,7 +20,7 @@
   <ul class="sidenav" id="mobile-demo">
     <li><router-link :to="home">Home</router-link></li>
     <li><router-link :to="about">About</router-link></li>
-    <li><router-link :to="academics">Academics</router-link></li>
+    <li><router-link :to="projects">Projects</router-link></li>
     <li><router-link :to="misc">Miscellaneous</router-link></li>
     <li><router-link :to="contact">Contact</router-link></li>
   </ul>
@@ -34,7 +34,7 @@ export default {
       landing: {name: "Landing"},
       home: {name: "Home"},
       about: {name: "About"},
-      academics: {name: "Academics"},
+      projects: {name: "Projects"},
       misc: {name: "Miscellaneous"},
       contact: {name: "Contact"}
     };
