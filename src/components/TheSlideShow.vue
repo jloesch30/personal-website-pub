@@ -4,18 +4,24 @@
       <div class="mySlides container center">
         <img
           class="responsive-img"
+          height="300"
+          width="300"
           :class="{ hide: !i1.show }"
           :src="require(`../assets/imgs/${i1.url}`)"
           alt=""
         />
         <img
           class="responsive-img"
+          height="300"
+          width="300"
           :class="{ hide: !i2.show }"
           :src="require(`../assets/imgs/${i2.url}`)"
           alt=""
         />
         <img
           class="responsive-img"
+          height="300"
+          width="300"
           :class="{ hide: !i3.show }"
           :src="require(`../assets/imgs/${i3.url}`)"
           alt=""
@@ -89,8 +95,6 @@ export default {
 
 <style scoped>
 img {
-  width: 60%;
-  height: auto;
   margin: 3rem;
 }
 .hide {
