@@ -13,10 +13,14 @@
   </section>
   <section class="container section-1">
     <p id="paragraph">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim esse impedit
-      aliquid omnis quidem quod, maiores dolor modi ex eius, harum architecto
-      laboriosam distinctio doloremque necessitatibus itaque? Quisquam, ea
-      magnam?
+      I am currently a senior at the University of Texas at Austin pursuing a
+      bachelors in Economics and a Masters of Science in Information Technology
+      Management. Both my bachelors and masters degree have been a great asset
+      to me in saturating my passions through technology, business, and
+      mathematics while gaining valuable experience solving real world problems.
+      Throughout my college education, I have gained a foundational
+      understanding in both quantitative and qualitative points of views,
+      allowing me to think abstractly when developing solutions.
     </p>
     <div class="row">
       <div class="col l12 center">
@@ -29,16 +33,16 @@
     </div>
     <div class="content">
       <p id="paragraph">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim esse
-        impedit aliquid omnis quidem quod, maiores dolor modi ex eius, harum
-        architecto laboriosam distinctio doloremque necessitatibus itaque?
-        Quisquam, ea magnam?Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Enim esse impedit aliquid omnis quidem quod, maiores dolor modi ex
-        eius, harum architecto laboriosam distinctio doloremque necessitatibus
-        itaque? Quisquam, ea magnam?Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Enim esse impedit aliquid omnis quidem quod, maiores
-        dolor modi ex eius, harum architecto laboriosam distinctio doloremque
-        necessitatibus itaque? Quisquam, ea magnam?
+        While attending UT I have had the privilege to serve as the Fundraising
+        officer, Vice President, and now currently the President of Texas
+        Rotaract, a non-profit organization serving under the standards of the
+        Rotary International Club. Our organization has developed a welcoming
+        space for a diverse group of students to serve Austin’s local community
+        in any way possible including trash pickups, garden restorations, food
+        deliveries, school events, and much more. Along with school related
+        activities, I also practice brazillian jiu jitsu; Coming from a
+        wrestling background jiu jitsu has been a great way for me to continue
+        practicing martial arts and stay active during University.
       </p>
     </div>
   </section>

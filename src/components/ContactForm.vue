@@ -8,6 +8,7 @@
               id="first_name"
               type="text"
               class="validate"
+              name="fname"
               v-model="fname"
             />
             <label for="first_name">First Name</label>
@@ -17,6 +18,7 @@
               id="last_name"
               type="text"
               class="validate"
+              name="lname"
               v-model="lname"
             />
             <label for="last_name">Last Name</label>
@@ -28,6 +30,7 @@
               id="content"
               type="text"
               class="validate materialize-textarea"
+              name="content"
               v-model="content"
             />
             <label for="content">Content</label>
@@ -35,11 +38,26 @@
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input id="email" type="email" class="validate" v-model="email" />
+            <input
+              id="email"
+              type="email"
+              class="validate"
+              name="email"
+              v-model="email"
+            />
             <label for="email">Email</label>
+            <span class="helper-text" data-error="invalid email" data-success=""></span>
           </div>
         </div>
-        <input type="submit" value="send">
+        <!-- <input type="submit" value="send" /> -->
+        <button
+          class="btn waves-effect waves-light"
+          type="submit"
+          name="action"
+        >
+          Submit
+          <i class="material-icons right">send</i>
+        </button>
       </form>
     </div>
   </section>
@@ -56,7 +74,7 @@ export default {
       lname: "",
       email: "",
       content: "",
-      key: process.env.VUE_APP_SERVICE_ID
+      key: process.env.VUE_APP_SERVICE_ID,
     };
   },
   mounted() {
@@ -64,30 +82,32 @@ export default {
   },
   methods: {
     sendEmail(e) {
-      console.log('Sending email');
-      console.dir(e);
-      console.log(this.key);
-      try {
-        emailjs.sendForm(
-          process.env.VUE_APP_SERVICE_ID,
-          process.env.VUE_APP_TEMPLATE_ID,
-          e.target,
-          process.env.VUE_APP_EMAIL_U_ID,
-          {
-            fname: this.fname,
-            lname: this.lname,
-            email: this.email,
-            content: this.content,
-          }
-        );
-      } catch (error) {
-          console.log({error});
+      // check if content was filled
+      if (e.target.fname.value && e.target.lname.value && e.target.content.value) {
+        emailjs
+          .sendForm(
+            process.env.VUE_APP_SERVICE_ID,
+            process.env.VUE_APP_TEMPLATE_ID,
+            e.target,
+            process.env.VUE_APP_EMAIL_U_ID
+          )
+          .then(
+            (result) => {
+              console.log("SUCCESS", result.status, result.text);
+              this.$emit('form-success'); // emit custom prop
+            },
+            (error) => {
+              console.log("FAILED...", error);
+              this.$emit('form-fail');
+            }
+          );
+      } else {
+        this.$emit('form-fail');
       }
-      // reset form field
       this.fname = '';
       this.lname = '';
-      this.email = '';
       this.content = '';
+      this.email = '';
     },
   },
 };
