@@ -12,6 +12,7 @@
       </div>
     </div>
     <div>
+      <h5>Proficient Technologies And Resume</h5>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
         beatae doloremque excepturi nihil. Sapiente hic ea, sint eveniet at
@@ -20,20 +21,17 @@
       </p>
     </div>
   </section>
-  <section class="extra-materials">
+  <section class="resume">
     <div class="container row center">
       <div>
         <iframe
           frameborder="0"
           scrolling="no"
-          width="400"
+          width="500"
           height="300"
           src="https://drive.google.com/file/d/1wJupk0BGrQYLxanEbre5NK3F9tWZASpK/preview"
         >
         </iframe>
-      </div>
-      <div>
-        <p>hello there</p>
       </div>
     </div>
   </section>
@@ -49,5 +47,11 @@ export default {
 <style scoped>
 div {
   /* outline: 2px solid red; */
+}
+iframe {
+  margin-top: 2rem;
+}
+h5 {
+  color: rgb(61, 138, 186);
 }
 </style>
