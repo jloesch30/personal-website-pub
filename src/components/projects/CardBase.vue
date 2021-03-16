@@ -11,7 +11,7 @@
               height="23"
               fill="currentColor"
               class="bi bi-github icon"
-              viewBox="0 0 16 16"
+              viewBox="0 0 15 17"
               @click="changeDomain(git_url)"
             >
               <path
