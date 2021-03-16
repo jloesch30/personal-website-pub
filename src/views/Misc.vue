@@ -20,6 +20,23 @@
       </p>
     </div>
   </section>
+  <section class="extra-materials">
+    <div class="container row center">
+      <div>
+        <iframe
+          frameborder="0"
+          scrolling="no"
+          width="400"
+          height="300"
+          src="https://drive.google.com/file/d/1wJupk0BGrQYLxanEbre5NK3F9tWZASpK/preview"
+        >
+        </iframe>
+      </div>
+      <div>
+        <p>hello there</p>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
