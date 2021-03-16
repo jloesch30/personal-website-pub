@@ -15,12 +15,13 @@
     <p id="paragraph">
       I am currently a senior at the University of Texas at Austin pursuing a
       bachelors in Economics and a Masters of Science in Information Technology
-      Management. Both my bachelors and masters degree have been a great asset
-      to me in saturating my passions through technology, business, and
-      mathematics while gaining valuable experience solving real world problems.
-      Throughout my college education, I have gained a foundational
-      understanding in both quantitative and qualitative points of views,
-      allowing me to think abstractly when developing solutions.
+      Management with the McCombs School of Business. Both my bachelors and
+      masters degree have been a great asset to me in saturating my passions
+      through technology, business, and mathematics while gaining valuable
+      experience solving real world problems. Throughout my college education, I
+      have gained a foundational understanding in both quantitative and
+      qualitative points of views, allowing me to think abstractly when
+      developing solutions.
     </p>
     <div class="row">
       <div class="col l12 center">
@@ -34,15 +35,18 @@
     <div class="content">
       <p id="paragraph">
         While attending UT I have had the privilege to serve as the Fundraising
-        officer, Vice President, and now currently the President of Texas
+        Officer, Vice President, and now currently the President of Texas
         Rotaract, a non-profit organization serving under the standards of the
         Rotary International Club. Our organization has developed a welcoming
         space for a diverse group of students to serve Austin’s local community
         in any way possible including trash pickups, garden restorations, food
-        deliveries, school events, and much more. Along with school related
-        activities, I also practice brazillian jiu jitsu; Coming from a
-        wrestling background jiu jitsu has been a great way for me to continue
-        practicing martial arts and stay active during University.
+        deliveries, school events, and much more. Along with school-related
+        activities, I also practice Brazilian jiu-jitsu and dabble in
+        photography; Coming from a wrestling background, jiu-jitsu has been a
+        great way for me to continue practicing martial arts and stay active
+        during University, while photography allows me the opportunity to
+        express my creativity through a lens of a camera and share the images on
+        my social media.
       </p>
     </div>
   </section>
@@ -58,10 +62,9 @@
       </div>
       <div class="col m11 left-align">
         <p id="paragraph" class="section-2-p">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
-          possimus, aliquam aperiam voluptas vero facilis fugit laboriosam illum
-          inventore omnis, saepe at quas iusto, est fugiat sequi neque itaque
-          voluptates.
+          I am currently scheduled to graduate in May of 2021 with a Bachelors
+          in Economics and May of 2022 with a Masters in Science of Information
+          Technology Management.
         </p>
       </div>
     </div>
@@ -108,6 +111,7 @@ img.section-2-image {
   margin: 4rem;
 }
 .header {
+  margin-left: -10px;
   font-weight: bold;
   font-family: "Merriweather", serif;
 }
@@ -119,7 +123,7 @@ img.section-2-image {
 }
 #paragraph {
   font-size: 16px;
-  font-family: "Montserrat", serif;
+  font-family: "Merriweather", serif;
 }
 #paragraph.section-2-p {
   margin: 2rem;
