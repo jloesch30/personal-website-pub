@@ -2,7 +2,7 @@
   <div class="card-wrapper">
     <div class="card">
       <div class="card-image">
-        <img :src="require(`@/assets/imgs/${image_url}`)" />
+        <img :src="require(`@/assets/imgs/projects/${image_url}`)" />
         <a class="btn-floating halfway-fab waves-effect waves-light red">
           <span class="git-icon">
             <svg

@@ -13,7 +13,7 @@
         ></card-base>
       </div>
       <div class="card-content col s12 m6 l8">
-        <h3 style="margin-top: 2rem">Vue + Materialize</h3>
+        <h3 style="margin-top: 2rem">Vue + Materialize CSS</h3>
         <p class="">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit autem
           asperiores nam ipsum possimus, ab, iusto quos consequuasdfum sequi
@@ -25,7 +25,7 @@
   <section class="card-content-grey">
     <div class="row container">
       <div class="col s12 m6 l8">
-        <h3 class="">Vue + Materialize</h3>
+        <h3 class="">Discord Bot + Webscraping + Yahoo Finance</h3>
         <p class="">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit autem
           asperiores nam ipsum possimus, ab, iusto quos consequuntur reiciendis
@@ -36,10 +36,30 @@
       <div class="col s12 m6 l4 card-container">
         <card-base
           class="card-base"
+          :image_url="'discord_icon.png'"
+          :card_content="'Discord Finance Bot'"
+          :git_url="'https://github.com/jloesch30/personal-website'"
+        ></card-base>
+      </div>
+    </div>
+  </section>
+  <section class="card-and-content">
+    <div class="row container">
+      <div class="card-content col s12 m6 l4">
+        <card-base
+          class="card-base"
           :image_url="'code.png'"
           :card_content="'Vue.js applciation'"
           :git_url="'https://github.com/jloesch30/personal-website'"
         ></card-base>
+      </div>
+      <div class="card-content col s12 m6 l8">
+        <h3 style="margin-top: 2rem">Vue + Materialize CSS</h3>
+        <p class="">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit autem
+          asperiores nam ipsum possimus, ab, iusto quos consequuasdfum sequi
+          aspernatur fuga.
+        </p>
       </div>
     </div>
   </section>
@@ -58,7 +78,6 @@ export default {
 
 <style scoped>
 h3 {
-  margin-top: 0;
   color: rgb(61, 138, 186);
 }
 .card-content-grey {
