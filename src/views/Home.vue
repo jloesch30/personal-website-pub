@@ -58,8 +58,8 @@ export default {
 
 <style scoped>
 .header {
-  font-weight: bold;
   font-family: "Merriweather", serif;
+  color: rgb(61, 138, 186);
 }
 .p-text {
   font-family: "Merriweather", serif;
