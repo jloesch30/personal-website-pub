@@ -6,7 +6,7 @@
         <a class="btn-floating halfway-fab waves-effect waves-light red">
           <span class="git-icon">
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg"
               width="23"
               height="23"
               fill="currentColor"

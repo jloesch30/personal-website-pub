@@ -4,10 +4,10 @@
   </div>
   <section class="intro-content container">
     <div class="row">
-      <div class="col l12 m12 s12">
+      <div class="col l12 m12 s12 center">
         <img
           :src="require('@/assets/icons/icon_cloud.png')"
-          class="responsive-img"
+          class="responsive-img technologies-image"
         />
       </div>
     </div>
@@ -21,17 +21,16 @@
       </p>
     </div>
   </section>
+  <div class="seperator"></div>
   <section class="resume">
-    <div class="container row center">
+    <div class="container center">
       <div>
-        <iframe
-          frameborder="0"
-          scrolling="no"
-          width="500"
-          height="300"
+        <embed
+          width="100%"
+          height="400px"
+          type="application/pdf"
           src="https://drive.google.com/file/d/1wJupk0BGrQYLxanEbre5NK3F9tWZASpK/preview"
-        >
-        </iframe>
+        />
       </div>
     </div>
   </section>
@@ -50,8 +49,17 @@ div {
 }
 iframe {
   margin-top: 2rem;
+  width: 100%;
+  height: 100%;
 }
 h5 {
   color: rgb(61, 138, 186);
+}
+img.technologies-image {
+  width: 70%;
+  height: auto;
+}
+.seperator {
+  margin: 3rem;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <section class="input-field">
     <div class="row container">
-      <form class="col s12" @submit.prevent="sendEmail">
+      <form action="?" class="col s12 contact-form" @submit.prevent="sendEmail" method="POST">
         <div class="row">
           <div class="input-field col s6">
             <input
@@ -55,7 +55,7 @@
           type="submit"
           name="action"
         >
-          Submit
+          Send
           <i class="material-icons right">send</i>
         </button>
       </form>

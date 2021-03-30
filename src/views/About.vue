@@ -52,15 +52,15 @@
   </section>
   <div class="seperator"></div>
   <section class="section-2">
-    <div class="row">
-      <div class="col m1 center-align">
+    <div class="row container">
+      <div class="col s12 m12 l8">
         <img
           class="section-2-image responsive-img"
           :src="require('../assets/imgs/family.jpg')"
           alt="lake photo"
         />
       </div>
-      <div class="col m11 left-align">
+      <div class="col s12 m12 l4">
         <p id="paragraph" class="section-2-p">
           I am currently scheduled to graduate in May of 2021 with a Bachelors
           in Economics and May of 2022 with a Masters in Science of Information
@@ -94,7 +94,9 @@ img.title-photo {
 }
 img.section-2-image {
   margin: 2rem;
-  max-height: 500px;
+  max-height: 300px;
+  min-height: 200px;
+  min-width: 200px;
 }
 .section-2 {
   background-color: rgb(244, 244, 244);
