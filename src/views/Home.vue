@@ -25,22 +25,6 @@
       <img src="../assets/imgs/camera.jpg" />
     </div>
   </div>
-  <div class="section white">
-    <div class="row container">
-      <h2 class="header">Parallax</h2>
-      <p class="p-text">
-        Parallax is an effect where the background content or image in this
-        case, is moved at a different speed than the foreground content while
-        scrolling.Parallax is an effect where the background content or image in
-        this case, is moved at a different speed than the foreground content
-        while scrolling.Parallax is an effect where the background content or
-        image in this case, is moved at a different speed than the foreground
-        content while scrolling.Parallax is an effect where the background
-        content or image in this case, is moved at a different speed than the
-        foreground content while scrolling.
-      </p>
-    </div>
-  </div>
 </template>
 
 <script>

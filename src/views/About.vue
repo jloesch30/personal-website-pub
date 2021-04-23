@@ -8,7 +8,7 @@
       <h4 class="header">About Me</h4>
     </div>
     <div>
-      <h5 class="under-header">Quote or saying here</h5>
+      <h5 class="under-header">Who is Josh?</h5>
     </div>
   </section>
   <section class="container section-1">

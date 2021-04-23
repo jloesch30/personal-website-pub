@@ -79,9 +79,9 @@
       <div class="card-content col s12 m6 l4">
         <card-base
           class="card-base"
-          :image_url="'portal_game.png'"
+          :image_url="'econ-paper.png'"
           :card_content="'Emperical research paper'"
-          :git_url="'https://github.com/jloesch30/cs324e_final_project/tree/v2.0'"
+          :git_url="'https://github.com/jloesch30/econ-analysis/blob/main/final_draft_Joshua_Loesch.pdf'"
         ></card-base>
       </div>
     </div>
