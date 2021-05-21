@@ -72,19 +72,19 @@ export default {
 }
 
 .name-plate {
-  font-size: 30px;
+  font-size: 35px;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
 
 .paragraph {
   color: var(--clr-primary-white);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 @media (min-width: 50em) {
   .paragraph {
-    font-size: 15px;
+    font-size: 18px;
   }
   .seperator {
     margin: 4rem 0;
