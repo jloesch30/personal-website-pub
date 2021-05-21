@@ -1,0 +1,7 @@
+:root {
+    --ff-primary: "Merriweather";
+    --ff-accent: "Montserrat";
+  
+    --clr-primary-blue: rgb(61, 138, 186);
+    --clr-primary-white: rgba(238, 238, 238, 0.952);
+  }

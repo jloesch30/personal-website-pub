@@ -58,6 +58,10 @@ img.resize {
   height: auto;
   object-fit: contain;
 }
+.navbar-fixed {
+  margin-bottom: 2rem;
+}
+
 .li-elem {
   color: white;
 }

@@ -39,14 +39,17 @@
 <script>
 import TheNav from "../components/TheNav.vue";
 export default {
+  data() {
+    return {
+      currentPage: 0,
+      pageCount: 0,
+    };
+  },
   components: { TheNav },
 };
 </script>
 
-<style scoped>
-div {
-  /* outline: 2px solid red; */
-}
+<style lang="scss" scoped>
 iframe {
   margin-top: 2rem;
   width: 100%;

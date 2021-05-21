@@ -1,80 +1,119 @@
 <template>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="personal-image col s6 offset-s7 center-align">
+    <div class="bg flex-container">
+      <div class="seperator"></div>
+      <div class="content--image">
+        <div class="img-container">
           <img
-            class="z-depth-3 responsive-img"
-            id="my-image"
-            src="../assets/imgs/head.png"
-            alt="placeholder"
+            class="headshot-image"
+            :src="require('@/assets/imgs/head_shot.png')"
+            alt="head shot"
           />
         </div>
-        <div class="col s6 offset-s7 center-align" id="welcome-text">
-          <h5>Welcome!</h5>
-          <p>
-            Please feel free to look around and explore my various intrests and
-            projects.
-          </p>
-        </div>
       </div>
+      <div class="content--description">
+        <h3 class="name-plate">Joshua Loesch</h3>
+        <p class="paragraph">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque ab
+          alias expedita itaque, voluptatum molestiae non esse obcaecati tempore
+          vero vel consequuntur, culpa, fuga illum est totam voluptates et
+          suscipit.
+        </p>
+      </div>
+      <div class="down-indication"></div>
     </div>
-
-    <div class="down-indication"></div>
-    <div class="bottom-footer">
+    <div class="footer">
       <the-footer></the-footer>
     </div>
   </body>
 </template>
 
 <script>
-import TheFooter from '../components/TheFooter.vue';
+import TheFooter from "../components/TheFooter.vue";
 
 export default {
   components: {
-    TheFooter
+    TheFooter,
   },
   data() {
     return {};
-  }
+  },
 };
 </script>
 
 <style scoped>
-body {
-  background-image: url("..\\assets\\imgs\\laptop.jpeg");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* - util - */
+.seperator {
+  margin: 2rem 0;
+}
+/* -------- */
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-shrink: 1;
+}
+
+.img-container {
+  width: 200px;
+}
+
+.content--description {
+  text-align: center;
+  margin-inline: auto;
+  width: min(50%);
+}
+
+.name-plate {
+  font-size: 30px;
+  margin-top: 0.5rem;
+}
+
+.paragraph {
+  color: var(--clr-primary-white);
+  font-size: 12px;
+}
+
+@media (min-width: 50em) {
+  .paragraph {
+    font-size: 15px;
+  }
+  .seperator {
+    margin: 4rem 0;
+  }
+  .name-plate {
+    font-size: 40px;
+  }
+}
+
+.headshot-image {
+  display: block;
+  width: 100%;
+  height: 200px;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 0.75rem grey);
+}
+
+.bg {
+  background-image: url(../assets/imgs/landing-back3.png);
+  width: 100%;
+  height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
-  background-color: #999;
 }
 
-.nav-items {
-  align-self: center;
-}
-
-.bottom-footer {
-  position: absolute;
-  left: 0;
+.footer {
+  position: relative;
   bottom: 0;
-  height: 0px;
   width: 100%;
-}
-
-.nav-items #load {
-  margin-top: 10px;
-}
-
-.personal-image #my-image {
-  width: 240px;
-  border-radius: 50%;
-  border: 2px solid black;
-  margin-top: 10rem;
-}
-
-#welcome-text {
-  margin-top: 0px;
 }
 
 .down-indication::before {
