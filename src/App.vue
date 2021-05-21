@@ -43,7 +43,6 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 600;
   font-family: var(--ff-accent);
   color: var(--clr-primary-blue);
 }

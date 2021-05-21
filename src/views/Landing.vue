@@ -74,6 +74,7 @@ export default {
 .name-plate {
   font-size: 30px;
   margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .paragraph {
