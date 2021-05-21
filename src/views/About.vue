@@ -110,7 +110,7 @@ h5 {
   display: flex;
   flex-direction: column;
   margin-inline: auto;
-  width: min(95%, 70.5rem);
+  width: min(90%, 70.5rem);
 }
 
 .content-container-row {
@@ -118,7 +118,7 @@ h5 {
   flex-direction: row;
   flex-basis: 100%;
   margin-inline: auto;
-  width: min(95%, 70.5rem);
+  width: min(90%, 70.5rem);
   padding-block: 4rem;
 }
 
@@ -133,9 +133,23 @@ h5 {
     justify-content: center;
     padding-block: 2em;
   }
+  .content-container-col {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    width: min(70%, 60rem);
+  }
+  .content-container-row {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    margin-inline: auto;
+    width: min(70%,60rem);
+    padding-block: 4rem;
+  }
   .p-content-container--row {
-  margin-block: 2rem;
-}
+    margin-block: 2rem;
+  }
 }
 
 .image-container {
