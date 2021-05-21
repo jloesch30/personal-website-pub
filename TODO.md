@@ -1,0 +1,2 @@
+- [ ] remove technology picture and add resume and personal information
+- [ ] elaborate on projects and add relevent experience

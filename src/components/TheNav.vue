@@ -2,7 +2,7 @@
   <div class="navbar-fixed">
     <nav id="navbar">
       <div class="nav-wrapper">
-        <router-link :to="landing" class="brand-logo"><img class="responsive-img resize circle z-depth-1" src="../assets/imgs/meSmall.jpeg"></router-link>
+        <router-link :to="landing" class="brand-logo"><img class="responsive-img resize circle z-depth-1" src="../assets/imgs/head_shot.png"></router-link>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"
           ><i class="material-icons">menu</i></a
         >
