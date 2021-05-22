@@ -6,8 +6,8 @@
     <section>
       <div class="container">
         <div class="header">
-          <h4>About Me</h4>
-          <h5 class="header--subheader">Who is Josh?</h5>
+          <h4 id="header--primary">About Me</h4>
+          <h5 id="header--subheader">Who is Josh?</h5>
         </div>
         <div class="p-content-container">
           <p id="paragraph">
@@ -54,7 +54,7 @@
         <div class="split">
           <div class="container--split-image">
             <img
-              id="image-row"
+              id="split--image"
               :src="require('../assets/imgs/family.jpg')"
               alt="faimily photo"
             />
@@ -128,6 +128,85 @@ h4,
 h5 {
   line-height: 1;
   margin-bottom: 0.5em;
+}
+
+.container {
+  margin-inline: auto;
+  width: min(95%, 70.5rem);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 50em) {
+  .header {
+    align-items: flex-start;
+  }
+}
+
+#header--primary {
+  font-weight: bold;
+}
+
+.container--spacer-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#spacer-image {
+  width: 50%;
+  min-width: 200px;
+}
+
+@media (min-width: 50em) {
+  .split {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.container--split-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-block: 1rem;
+}
+
+@media (min-width: 50em) {
+  .container--split-image {
+    display: inline;
+    flex: 1 1 0px;
+    margin-right: 3rem;
+  }
+  .container {
+    flex-basis: 100%;
+  }
+  .container--split-p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+#split--image {
+  width: 50%;
+  min-width: 200px;
+}
+
+@media (min-width: 50em) {
+  #split--image {
+    width: 400px;
+  }
 }
 
 </style>
