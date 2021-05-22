@@ -179,7 +179,7 @@ h5 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-block: 1rem;
+  margin-block: 2rem;
 }
 
 @media (min-width: 50em) {
