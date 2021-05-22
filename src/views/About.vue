@@ -48,22 +48,20 @@
         </p>
       </div>
     </section>
-    <section class="content-container-col">
-      <div class="split">
-        <div class="image-container--row">
-          <img
-            class="image-row"
-            :src="require('../assets/imgs/family.jpg')"
-            alt="faimily photo"
-          />
-        </div>
-        <div class="p-content-container--row">
-          <p id="p-content-description">
-            I am currently scheduled to graduate in May of 2021 with a Bachelors
-            in Economics and May of 2022 with a Masters in Science of Information
-            Technology Management.
-          </p>
-        </div>
+    <section class="content-container-row">
+      <div class="image-container--row">
+        <img
+          class="image-row"
+          :src="require('../assets/imgs/family.jpg')"
+          alt="faimily photo"
+        />
+      </div>
+      <div class="p-content-container--row">
+        <p id="p-content-description">
+          I am currently scheduled to graduate in May of 2021 with a Bachelors
+          in Economics and May of 2022 with a Masters in Science of Information
+          Technology Management.
+        </p>
       </div>
     </section>
   </body>
@@ -122,20 +120,23 @@ h5 {
   justify-items: center;
   align-items: center;
   margin-inline: auto;
-  width: min(90%, 70.5rem);
+  width: min(85%, 70.5rem);
+}
+
+.content-container-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  width: min(85%, 70.5rem);
 }
 
 /* large display media query */
 @media (min-width: 50em) {
-  .split {
-    margin-block: 1rem;
-    display: flex;
+  .content-container-row {
     flex-direction: row;
-    flex-basis: 100%;
-    align-items: center;
-  }
-  .p-content-container--row {
-    margin-left: 1em;
+    margin-block: 1rem;
   }
 }
 
@@ -151,7 +152,6 @@ h5 {
 
 .image-container {
   display: flex;
-  width: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -160,17 +160,29 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-block: 2rem;
+  margin-block: 1rem;
+}
+
+@media (min-width: 50em) {
+  .image-container--row {
+    display: inline;
+  }
 }
 
 .image-spacer {
   height: 100%;
   width: 60%;
-  min-width: 300px;
 }
 
 .image-row {
   height: 100%;
-  width: 350px;
+  width: 50%;
+}
+
+@media (min-width: 50em) {
+  .image-row {
+    width: 400px;
+    margin-right: 1rem;
+  }
 }
 </style>
