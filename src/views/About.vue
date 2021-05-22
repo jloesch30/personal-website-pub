@@ -6,8 +6,6 @@
     <section class="content-container-col">
       <div class="header-container">
         <h4 class="header">About Me</h4>
-      </div>
-      <div>
         <h5 class="header--sub-header">Who is Josh?</h5>
       </div>
       <p id="paragraph">
@@ -50,20 +48,22 @@
         </p>
       </div>
     </section>
-    <section class="content-container-row">
-      <div class="image-container--row">
-        <img
-          class="image-row"
-          :src="require('../assets/imgs/family.jpg')"
-          alt="faimily photo"
-        />
-      </div>
-      <div class="p-content-container--row">
-        <p id="p-content-description" class="">
-          I am currently scheduled to graduate in May of 2021 with a Bachelors
-          in Economics and May of 2022 with a Masters in Science of Information
-          Technology Management.
-        </p>
+    <section class="content-container-col">
+      <div class="split">
+        <div class="image-container--row">
+          <img
+            class="image-row"
+            :src="require('../assets/imgs/family.jpg')"
+            alt="faimily photo"
+          />
+        </div>
+        <div class="p-content-container--row">
+          <p id="p-content-description">
+            I am currently scheduled to graduate in May of 2021 with a Bachelors
+            in Economics and May of 2022 with a Masters in Science of Information
+            Technology Management.
+          </p>
+        </div>
       </div>
     </section>
   </body>
@@ -71,17 +71,33 @@
 <script>
 import M from "materialize-css";
 import TheNav from "@/components/TheNav.vue";
+import { onMounted } from "vue";
 export default {
-  data() {
-    return {};
-  },
   components: {
     TheNav,
   },
-  mounted() {
-    M.AutoInit();
+  data() {
+    return {};
   },
-  computed: {},
+  setup() {
+    onMounted(() => {
+      M.AutoInit();
+    });
+  },
+  /* ------- alternative method with dynamic classes ------- */
+  // created() {
+  //   window.addEventListener("resize", this.windowEventHandler);
+  // },
+  // methods: {
+  //   windowEventHandler(e) {
+  //     console.log('window changed size', e);
+  //     if (window.innerWidth > 800) {
+  //       this.contentOrientationRow = false;
+  //     } else if (window.innerWidth <= 800) {
+  //       this.contentOrientationRow = true;
+  //     }
+  //   }
+  // },
 };
 </script>
 
@@ -100,56 +116,37 @@ h5 {
   font-weight: 600;
 }
 
+.content-container-col {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+
+/* large display media query */
+@media (min-width: 50em) {
+  .split {
+    margin-block: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    align-items: center;
+  }
+  .p-content-container--row {
+    margin-left: 1em;
+  }
+}
+
+.header-container {
+  width: 100%;
+}
+
 .header--sub-header {
   font-style: italic;
   font-weight: 100;
   margin-block: 0.5rem;
-}
-
-.content-container-col {
-  display: flex;
-  flex-direction: column;
-  margin-inline: auto;
-  width: min(90%, 70.5rem);
-}
-
-.content-container-row {
-  display: flex;
-  flex-direction: row;
-  flex-basis: 100%;
-  margin-inline: auto;
-  width: min(90%, 70.5rem);
-  padding-block: 4rem;
-}
-
-.p-content-container--row {
-  margin-left: 2rem;
-}
-
-@media (max-width: 50em) {
-  .content-container-row {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-block: 2em;
-  }
-  .content-container-col {
-    display: flex;
-    flex-direction: column;
-    margin-inline: auto;
-    width: min(70%, 60rem);
-  }
-  .content-container-row {
-    display: flex;
-    flex-direction: row;
-    flex-basis: 100%;
-    margin-inline: auto;
-    width: min(70%,60rem);
-    padding-block: 4rem;
-  }
-  .p-content-container--row {
-    margin-block: 2rem;
-  }
 }
 
 .image-container {
@@ -161,11 +158,15 @@ h5 {
 
 .image-container--row {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 2rem;
 }
 
 .image-spacer {
   height: 100%;
-  width: 450px;
+  width: 60%;
+  min-width: 300px;
 }
 
 .image-row {
