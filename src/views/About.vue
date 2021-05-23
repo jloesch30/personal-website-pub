@@ -130,6 +130,10 @@ h5 {
   margin-bottom: 0.5em;
 }
 
+img {
+  margin: 3% 0
+}
+
 .container {
   margin-inline: auto;
   width: min(95%, 70.5rem);
@@ -179,7 +183,6 @@ h5 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5rem 0;
 }
 
 @media (min-width: 50em) {
