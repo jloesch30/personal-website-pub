@@ -15,12 +15,18 @@
           </div>
           <div>
             <div class="container--narrow">
-              <h3>Vue + Materialize CSS</h3>
+              <h3>Vue 3 Personal Website</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-              autem asperiores nam ipsum possimus, ab, iusto quos consequuasdfum
-              sequi aspernatur fuga.
+              This website was made in hopes to explore front end development
+              and get more experience with relevant frameworks such as Vue &
+              React. Vue 3 was officially launched in September of 2020, making
+              it a fairly fresh version with an intuitive migration guide from
+              the previous Vue 2. I chose Vue 3 due to the overall relevance of
+              the framework and the limited compatible libraries available for
+              the newer version; This allowed me to focus more on the core
+              capabilities of Vue while also having to rely on my CSS skills to
+              style the web page to my liking.
             </p>
           </div>
         </div>
@@ -34,13 +40,23 @@
               <h3>Discord Bot + Webscraping + Yahoo Finance</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-              autem asperiores nam ipsum possimus, ab, iusto quos consequuntur
-              reiciendis nihil libero, minus laborum eligendi vero dolor
-              laudantium sequi aspernatur fuga.
+              This was a fun introduction to working with the Discord API in
+              making server bots. I was inspired by the incredible hype
+              revolving around investing and crypto and saw it as an opportunity
+              to help my friends by putting together a financial aggregating
+              bot. The bot mainly has two primary functions: One being to
+              communicate with a open source clone of the Yahoo Finance API,
+              while the other is to scrape the web for relevant news in regards
+              to the targeted securities. When activated, a user can call on the
+              bot from within a server and be recognized as a user via a
+              collection stored in a MongoDB database; Once the user is
+              recognized or has created an account, they can create, update, or
+              delete information from their “watchlist” that can be queried for
+              price information and relevant news. Check out the git repo for
+              more information!
             </p>
           </div>
-          <div  class="container--card">
+          <div class="container--card">
             <card-base
               :image_url="'discord_icon.png'"
               :card_content="'Discord Finance Bot'"
@@ -84,10 +100,11 @@
               <h3>Econometrics Research Paper</h3>
             </div>
             <p>
-              The paper uses emperical methods to evaluate internet usage as a
-              factor of domestic suicides. Using multi-variable regression, the
-              paper uses reviewed litterature and emperical statistics to
-              explore the topic.
+              The paper uses empirical methods to evaluate internet usage as a
+              factor of domestic suicides. Using multivariable regression, the
+              paper utilizes reviewed literature and empirical statistics to
+              explore the topic and report the findings in a research analysis
+              fashion.
             </p>
           </div>
           <div class="container--card">
@@ -186,5 +203,4 @@ body > section {
     flex-basis: 100%;
   }
 }
-
 </style>

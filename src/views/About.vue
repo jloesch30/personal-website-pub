@@ -43,8 +43,8 @@
             Brazilian jiu-jitsu and dabble in photography; Coming from a
             wrestling background, jiu-jitsu has been a great way for me to
             continue practicing martial arts and stay active during University,
-            while photography allows me the opportunity to express my creativity
-            through a lens of a camera and share the images on my social media.
+            while photography gives me the opportunity to express my creativity
+            through a lens and share the images on my social media.
           </p>
         </div>
       </div>
