@@ -23,10 +23,10 @@
           </h6>
           <h6 class="col s3 center">
             <router-link
-              :to="miscellaneous"
+              :to="resume"
               class="hvr-float-shadow"
               id="click-link"
-              >Misc</router-link
+              >Resume</router-link
             >
           </h6>
         </div>
@@ -85,7 +85,7 @@ export default {
       about: { name: "About" },
       home: { name: "Home" },
       projects: { name: "Projects" },
-      miscellaneous: { name: "Miscellaneous" },
+      resume: { name: "Resume" },
       git: 'https://github.com/jloesch30',
       insta: 'https://www.instagram.com/joshualoesch/',
       linked: 'https://www.linkedin.com/in/joshua-loesch'

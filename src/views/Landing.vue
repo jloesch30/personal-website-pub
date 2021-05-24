@@ -6,7 +6,7 @@
         <div class="img-container">
           <img
             class="headshot-image"
-            :src="require('@/assets/imgs/head_shot.png')"
+            :src="require('@/assets/imgs/head-shot.jpg')"
             alt="head shot"
           />
         </div>
@@ -14,10 +14,7 @@
       <div class="content--description">
         <h3 class="name-plate">Joshua Loesch</h3>
         <p class="paragraph">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque ab
-          alias expedita itaque, voluptatum molestiae non esse obcaecati tempore
-          vero vel consequuntur, culpa, fuga illum est totam voluptates et
-          suscipit.
+          Technology enthusiast, Programmer & Student
         </p>
       </div>
       <div class="down-indication"></div>

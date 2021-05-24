@@ -3,7 +3,7 @@ import Home from "@/views/Home.vue";
 import About from "@/views/About.vue";
 import Projects from "@/views/Projects.vue";
 import Landing from "@/views/Landing.vue";
-import Misc from "@/views/Misc.vue";
+import Resume from "@/views/Resume.vue";
 import Contact from "@/views/Contact.vue";
 
 
@@ -31,9 +31,9 @@ const routes = [
     component: Contact
   },
   {
-    path: baseUrl + '/misc',
-    name: 'Miscellaneous',
-    component: Misc
+    path: baseUrl + '/resume',
+    name: 'Resume',
+    component: Resume
   },
   {
     path: baseUrl + '/about',

@@ -2,7 +2,7 @@
   <div class="navbar-fixed">
     <nav id="navbar">
       <div class="nav-wrapper">
-        <router-link :to="landing" class="brand-logo"><img class="responsive-img resize circle z-depth-1" src="../assets/imgs/head_shot.png"></router-link>
+        <router-link :to="landing" class="brand-logo"><img class="responsive-img resize circle z-depth-1" src="../assets/imgs/head-shot.jpg"></router-link>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"
           ><i class="material-icons">menu</i></a
         >
@@ -10,7 +10,7 @@
           <li><router-link :to="home" class="li-elem">Home</router-link></li>
           <li><router-link :to="about" class="li-elem">About</router-link></li>
           <li><router-link :to="projects" class="li-elem">Projects</router-link></li>
-          <li><router-link :to="misc" class="li-elem">Miscellaneous</router-link></li>
+          <li><router-link :to="resume" class="li-elem">Resume</router-link></li>
           <li><router-link :to="contact" class="li-elem"><i class="material-icons">message</i></router-link></li>
         </ul>
       </div>
@@ -21,7 +21,7 @@
     <li><router-link :to="home">Home</router-link></li>
     <li><router-link :to="about">About</router-link></li>
     <li><router-link :to="projects">Projects</router-link></li>
-    <li><router-link :to="misc">Miscellaneous</router-link></li>
+    <li><router-link :to="resume">Resume</router-link></li>
     <li><router-link :to="contact">Contact</router-link></li>
   </ul>
 </template>
@@ -35,7 +35,7 @@ export default {
       home: {name: "Home"},
       about: {name: "About"},
       projects: {name: "Projects"},
-      misc: {name: "Miscellaneous"},
+      resume: {name: "Resume"},
       contact: {name: "Contact"}
     };
   },
