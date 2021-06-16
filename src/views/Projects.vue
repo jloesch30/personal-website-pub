@@ -10,7 +10,8 @@
             <card-base
               :image_url="'code.png'"
               :card_content="'Vue.js applciation'"
-              :git_url="'https://github.com/jloesch30/personal-website'"
+              :url="'https://github.com/jloesch30/personal-website'"
+              :blog="false"
             ></card-base>
           </div>
           <div>
@@ -60,7 +61,8 @@
             <card-base
               :image_url="'discord_icon.png'"
               :card_content="'Discord Finance Bot'"
-              :git_url="'https://github.com/jloesch30/stock-bot'"
+              :url="'https://github.com/jloesch30/stock-bot'"
+              :blog="false"
             ></card-base>
           </div>
         </div>
@@ -73,7 +75,8 @@
             <card-base
               :image_url="'portal_game.png'"
               :card_content="'Processing Java Game '"
-              :git_url="'https://github.com/jloesch30/cs324e_final_project/tree/v2.0'"
+              :url="'https://github.com/jloesch30/cs324e_final_project/tree/v2.0'"
+              :blog="false"
             ></card-base>
           </div>
           <div class="card-description">
@@ -111,12 +114,40 @@
             <card-base
               :image_url="'econ-paper.png'"
               :card_content="'Emperical research paper'"
-              :git_url="'https://github.com/jloesch30/econ-analysis/blob/main/final_draft_Joshua_Loesch.pdf'"
+              :url="'https://github.com/jloesch30/econ-analysis/blob/main/final_draft_Joshua_Loesch.pdf'"
+              :blog="false"
             ></card-base>
           </div>
         </div>
       </div>
     </section>
+    <!-- <section>
+      <div class="container">
+        <div class="split">
+          <div class="container--card">
+            <card-base
+              :image_url="'portal_game.png'"
+              :card_content="'Processing Java Game '"
+              :url="'lstm-lite'"
+              :blog="true"
+            ></card-base>
+          </div>
+          <div class="card-description">
+            <div class="container--narrow">
+              <h3>LSTM Litecoin</h3>
+            </div>
+            <p>
+              This game was completed for a final project for cs324e (Graphics
+              and Visualization) at the University of Texas. This game is a
+              mimic of the famous game "Portal" from the publisher Valve. It has
+              a series of 8-bit classic mechanics such as collision detection,
+              movement keys, physics simulations such as gravity, and
+              teleportation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
   </body>
 </template>
 

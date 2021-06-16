@@ -5,6 +5,9 @@ import Projects from "@/views/Projects.vue";
 import Landing from "@/views/Landing.vue";
 import Resume from "@/views/Resume.vue";
 import Contact from "@/views/Contact.vue";
+import BlogMain from "@/views/blog/BlogMain.vue";
+import Lstmlite from "@/views/blog/Lstm-lite.vue";
+import NotFound from "@/views/NotFound.vue";
 
 
 const baseUrl = '/personal-website';
@@ -16,29 +19,44 @@ const routes = [
     component: Landing
   },
   {
-    path: baseUrl + '/home',
+    path: baseUrl + '/home/',
     name: 'Home',
     component: Home
   },
   {
-    path: baseUrl + '/projects',
+    path: baseUrl + '/projects/',
     name: 'Projects',
     component: Projects  
   },
   {
-    path: baseUrl + '/contact',
+    path: baseUrl + '/contact/',
     name: 'Contact',
     component: Contact
   },
   {
-    path: baseUrl + '/resume',
+    path: baseUrl + '/resume/',
     name: 'Resume',
     component: Resume
   },
   {
-    path: baseUrl + '/about',
+    path: baseUrl + '/about/',
     name: 'About',
     component: About
+  },
+  {
+    path: baseUrl + '/blog/',
+    component: BlogMain,
+    children: [
+      {
+        path: 'lstm-lite',
+        component: Lstmlite
+      }
+    ]
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'NotFound',
+    component: NotFound
   }
 ];
 
