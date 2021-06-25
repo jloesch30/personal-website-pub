@@ -86,10 +86,10 @@ export default {
       if (e.target.fname.value && e.target.lname.value && e.target.content.value) {
         emailjs
           .sendForm(
-            'service_pnmzsfh',
-            'template_1sprajr',
+            process.env.VUE_APP_SERVICE_ID,
+            process.env.VUE_APP_TEMPLATE_ID,
             e.target,
-            'user_Kjx73uFVb0VLAZvpcJzZM'
+            process.env.VUE_APP_USER_ID
           )
           .then(
             (result) => {
